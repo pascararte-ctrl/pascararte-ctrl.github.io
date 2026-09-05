@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marco n8n — asistente personal</title>
+<style>
+  :root { --tinta:#1a1a1a; --suave:#5b6167; --linea:#e3e6e9; --fondo:#fff; --acento:#1f3a5f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta:#e8eaed; --suave:#9aa2ab; --linea:#2c3136; --fondo:#15181b; --acento:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:3rem 1.25rem 5rem; background:var(--fondo); color:var(--tinta);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  .bajada { color:var(--suave); margin:0 0 2.5rem; font-size:1.05rem; }
+  h2 { font-size:1.15rem; margin:2.5rem 0 .75rem; }
+  ul { padding-left:1.15rem; margin:.5rem 0; }
+  li { margin:.35rem 0; }
+  a { color:var(--acento); }
+  .caja { border:1px solid var(--linea); border-radius:10px; padding:1.1rem 1.25rem; margin:1.5rem 0; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--linea);
+           color:var(--suave); font-size:.9rem; }
+  footer a { margin-right:1.25rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Marco n8n</h1>
+  <p class="bajada">Asistente personal de Patricio Scarzella. Aplicación privada, de un solo usuario.</p>
+
+  <p><strong>Marco n8n</strong> es una automatización personal que conecta las cuentas de Google de su
+  titular con una instancia de <a href="https://n8n.io" rel="noopener">n8n</a> autohospedada en su propia
+  computadora. Sirve para redactar y enviar correo, consultar y organizar la agenda, y registrar pendientes,
+  sin salir del entorno de trabajo del titular.</p>
+
+  <div class="caja">
+    <strong>No es un producto ni un servicio para terceros.</strong> No hay registro de usuarios, no se
+    ofrece al público y nadie más que su titular puede usarla.
+  </div>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Lee la casilla de correo para separar lo que requiere acción de lo que sólo se archiva.</li>
+    <li>Redacta y envía correo en nombre de su titular, siempre con confirmación previa.</li>
+    <li>Consulta la agenda, verifica superposiciones y crea o reprograma eventos.</li>
+    <li>Registra y consulta pendientes.</li>
+  </ul>
+
+  <h2>Dónde corre</h2>
+  <p>Enteramente en la computadora de su titular. La instancia de n8n escucha en <code>localhost</code>
+  y no está expuesta a internet. No hay servidor intermedio, ni base de datos remota, ni proveedor de
+  nube involucrado en el tratamiento de los datos.</p>
+
+  <footer>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="condiciones.html">Condiciones del servicio</a>
+    <span>Contacto: pascararte@gmail.com</span>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Marco n8n</title>
+<style>
+  :root { --tinta:#1a1a1a; --suave:#5b6167; --linea:#e3e6e9; --fondo:#fff; --acento:#1f3a5f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta:#e8eaed; --suave:#9aa2ab; --linea:#2c3136; --fondo:#15181b; --acento:#8ab4f8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:3rem 1.25rem 5rem; background:var(--fondo); color:var(--tinta);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size:1.75rem; line-height:1.2; margin:0 0 .3rem; letter-spacing:-.02em; }
+  .fecha { color:var(--suave); margin:0 0 2.5rem; font-size:.92rem; }
+  h2 { font-size:1.1rem; margin:2.25rem 0 .6rem; }
+  ul { padding-left:1.15rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--acento); }
+  table { border-collapse:collapse; width:100%; margin:1rem 0; font-size:.95rem; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--linea); padding:.55rem .7rem; text-align:left; vertical-align:top; }
+  th { font-weight:600; }
+  .caja { border:1px solid var(--linea); border-radius:10px; padding:1.1rem 1.25rem; margin:1.5rem 0; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--linea);
+           color:var(--suave); font-size:.9rem; }
+  footer a { margin-right:1.25rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Marco n8n · vigente desde el 5 de septiembre de 2026</p>
+
+  <p>Marco n8n es una aplicación personal, usada exclusivamente por su titular, Patricio Scarzella,
+  sobre sus propias cuentas de Google. No tiene otros usuarios, no ofrece registro y no está disponible
+  para terceros.</p>
+
+  <h2>Qué datos se tratan</h2>
+  <p>Únicamente los de las cuentas de Google del propio titular, a las que él mismo autoriza el acceso:</p>
+  <table>
+    <thead><tr><th>Dato</th><th>Para qué se usa</th></tr></thead>
+    <tbody>
+      <tr><td>Mensajes de correo (Gmail)</td><td>Clasificar lo entrante y redactar respuestas; enviar correo a pedido del titular.</td></tr>
+      <tr><td>Eventos de calendario</td><td>Consultar la agenda, detectar superposiciones y crear o reprogramar eventos.</td></tr>
+      <tr><td>Listas de tareas</td><td>Consultar y registrar pendientes.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Dónde se procesan y se guardan</h2>
+  <p>El tratamiento ocurre íntegramente en la computadora del titular. La instancia de n8n que ejecuta
+  la aplicación escucha en <code>localhost</code> y no está publicada en internet. Las credenciales de
+  acceso quedan cifradas en el disco local.</p>
+  <p><strong>No hay servidor intermedio.</strong> Los datos obtenidos de las APIs de Google no se copian
+  a ninguna base remota ni a servicios de terceros: se usan en el momento y se descartan.</p>
+
+  <h2>Con quién se comparten</h2>
+  <p><strong>Con nadie.</strong> No se venden, no se ceden, no se publican y no se transfieren a terceros
+  bajo ninguna forma.</p>
+
+  <div class="caja">
+    <strong>Uso limitado.</strong> El uso y la transferencia de la información recibida de las APIs de
+    Google se ajusta a la
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de
+    Datos de Usuario de los Servicios de API de Google</a>, incluidos sus requisitos de uso limitado. En
+    particular: los datos no se usan para publicidad, no se venden, no se emplean para entrenar modelos
+    de inteligencia artificial generalizados, y ninguna persona los lee salvo el propio titular.
+  </div>
+
+  <h2>Cuánto se conservan</h2>
+  <p>No se conservan. La aplicación no mantiene copia de los mensajes, eventos ni tareas: los consulta
+  cuando hace falta y trabaja con la respuesta en memoria. Lo único que persiste son los tokens de acceso,
+  cifrados localmente, hasta que se revoquen.</p>
+
+  <h2>Cómo revocar el acceso</h2>
+  <p>El titular puede retirar los permisos en cualquier momento desde
+  <a href="https://myaccount.google.com/permissions" rel="noopener">la página de aplicaciones conectadas
+  de su Cuenta de Google</a>. Al hacerlo, la aplicación deja de tener acceso de inmediato y los tokens
+  almacenados quedan sin efecto.</p>
+
+  <h2>Menores de edad</h2>
+  <p>La aplicación no está dirigida a menores y no trata datos de terceros: sólo los de la cuenta de su
+  titular.</p>
+
+  <h2>Cambios</h2>
+  <p>Cualquier modificación de esta política se publica en esta misma página, con su fecha de vigencia
+  actualizada.</p>
+
+  <h2>Contacto</h2>
+  <p>Consultas sobre esta política: <a href="mailto:pascararte@gmail.com">pascararte@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">Inicio</a>
+    <a href="condiciones.html">Condiciones del servicio</a>
+  </footer>
+</main>
+</body>
+</html>
